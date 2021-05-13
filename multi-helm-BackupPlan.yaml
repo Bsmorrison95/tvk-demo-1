@@ -1,0 +1,13 @@
+apiVersion: triliovault.trilio.io/v1
+kind: BackupPlan
+metadata:
+  name: sample-application
+spec:
+  backupNamespace: triliovault-integration
+  backupConfig:
+    target:
+      name: sample-target
+  backupPlanComponents:
+    helmReleases:
+      - sample-release
+      - sample-release2

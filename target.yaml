@@ -1,0 +1,10 @@
+apiVersion: triliovault.trilio.io/v1
+kind: Target
+metadata:
+  name: sample-target
+spec:
+  type: NFS
+  vendor: Other
+  nfsCredentials:
+    nfsExport: 10.10.2.21:/migration/kube
+    nfsOptions: nfsvers=4

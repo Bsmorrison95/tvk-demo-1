@@ -1,0 +1,15 @@
+apiVersion: triliovault.trilio.io/v1
+kind: Target
+metadata:
+  name: saawstarget
+spec:
+  type: ObjectStore
+  vendor: AWS
+  objectStoreCredentials:
+    url: "https://s3.amazonaws.com"
+    accessKey: "Lookcupkey"
+    secretKey: "Lookupkey"
+    bucketName: "Lookupbucket"
+    region: "Lookupregion"
+    enableBrowsing: "true"
+  thresholdCapacity: 1000Gi
